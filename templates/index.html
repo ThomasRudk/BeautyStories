@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#f8bbd9">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>BeautyStories - Transforme seus Stories em uma vitrine irresistível</title>
+    
+    <!-- Google Fonts - Optimized -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="dns-prefetch" href="https://api.abacatepay.com">
+    <link rel="dns-prefetch" href="https://cdn.utmify.com.br">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transforme seus Stories em uma vitrine irresistível em apenas 2 minutos</h1>
+                
+                <div class="hero-text">
+                    <p>Seus Stories podem estar afastando clientes sem que você perceba.</p>
+                    <p>Quando não chamam atenção ou parecem amadores, passam a impressão errada sobre o seu trabalho.</p>
+                    <p><strong>Mas existe uma solução simples, rápida e acessível.</strong></p>
+                </div>
+                
+                <button class="cta-button primary" onclick="openPurchasePopup()">
+                    <i class="fas fa-star"></i>
+                    Quero meus Stories profissionais
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product">
+        <div class="container">
+            <h2>Apresentamos o BeautyStories</h2>
+            
+            <p class="highlight">São mais de <strong>4.000 figurinhas exclusivas</strong>, criadas para profissionais da beleza que querem Stories:</p>
+            
+            <div class="product-image">
+                <img src="https://i.ibb.co/zH2mXrHt/1.png" alt="BeautyStories Figurinhas" class="responsive-image" loading="lazy" decoding="async">
+            </div>
+            
+            <p class="product-description">Com o BeautyStories você consegue resultados incríveis sem gastar horas editando ou pagar caro por designers.</p>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>Como funciona?</h2>
+            
+            <div class="steps-list">
+                <div class="step-item">
+                    <strong>1. Você faz sua compra por apenas R$19,90</strong>
+                </div>
+                <div class="step-item">
+                    <strong>2. Assim que o pagamento for aprovado, recebe o link no seu e-mail</strong>
+                </div>
+                <div class="step-item">
+                    <strong>3. Escolhe a figurinha que quiser, salva e cola no seu Story</strong>
+                </div>
+            </div>
+            
+            <p class="steps-summary">Simples assim. Em apenas 2 minutos, seus Stories ficam profissionais e chamativos.</p>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+        <div class="container">
+            <h2>Por que o BeautyStories é perfeito para você?</h2>
+            
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Mais de 4 mil figurinhas prontas para todo tipo de situação</span>
+                </div>
+                
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Design profissional sem gastar nada a mais</span>
+                </div>
+                
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Stories que chamam atenção e atraem clientes</span>
+                </div>
+                
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Qualquer pessoa consegue usar, mesmo sem experiência</span>
+                </div>
+                
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Investimento único, sem mensalidade</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing">
+        <div class="container">
+            <h2>Oferta Especial</h2>
+            
+            <div class="price-container">
+                <div class="original-price">
+                    De <span class="strikethrough">R$89,90</span>
+                </div>
+                <div class="current-price">
+                    por apenas <span class="price-highlight">R$19,90</span>
+                </div>
+                <div class="price-subtitle">
+                    Oferta única, acesso imediato e vitalício.
+                </div>
+            </div>
+            
+            <button class="cta-button primary large" onclick="openPurchasePopup()">
+                <i class="fas fa-lock"></i>
+                Garantir meu acesso agora
+            </button>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Depoimentos de quem já usa o BeautyStories</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Minhas clientes começaram a comentar mais e até aumentei meus agendamentos só melhorando meus Stories."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Fernanda</strong>
+                        <span>nail designer</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Nunca mais perdi tempo tentando criar artes no Canva. Agora em segundos deixo meus Stories incríveis."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Juliana</strong>
+                        <span>lash designer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2>Perguntas Frequentes</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>1. Quando vou receber acesso?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Assim que o pagamento for aprovado, você recebe o link no seu e-mail.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>2. Preciso ter algum aplicativo específico para usar?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não. Basta salvar as figurinhas e colar diretamente nos seus Stories.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>3. É só uma vez ou tem mensalidade?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>É um pagamento único de R$19,90.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>4. Posso usar as figurinhas quantas vezes quiser?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, o acesso é vitalício.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purchase Modal -->
+    <div id="purchaseModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Finalizar Compra</h3>
+                <span class="close" onclick="closePurchasePopup()">&times;</span>
+            </div>
+            
+            <div class="modal-body">
+                <div id="formStep" class="step-content active">
+                    <form id="purchaseForm">
+                        <div class="form-group">
+                            <label for="name">Nome Completo *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cpf">CPF *</label>
+                            <input type="text" id="cpf" name="cpf" required>
+                        </div>
+                        
+                        <button type="submit" class="cta-button primary">
+                            <i class="fas fa-qrcode"></i>
+                            Gerar QR Code
+                        </button>
+                    </form>
+                </div>
+                
+                <div id="qrStep" class="step-content">
+                    <div class="qr-container">
+                        <h4>Escaneie o QR Code para pagar</h4>
+                        <div id="qrCodeContainer">
+                            <!-- QR Code will be inserted here -->
+                        </div>
+                        <p class="qr-instructions">
+                            Abra o app do seu banco e escaneie o código acima para efetuar o pagamento via PIX
+                        </p>
+                        <div class="payment-status">
+                            <i class="fas fa-clock"></i>
+                            <span id="statusText">Aguardando pagamento...</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="loadingStep" class="step-content">
+                    <div class="loading-container">
+                        <div class="spinner"></div>
+                        <p>Gerando seu QR Code...</p>
+                    </div>
+                </div>
+                
+                <div id="errorStep" class="step-content">
+                    <div class="error-container">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>Ops! Algo deu errado</h4>
+                        <p id="errorMessage">Tente novamente em alguns instantes.</p>
+                        <button class="cta-button secondary" onclick="showStep('formStep')">
+                            Tentar Novamente
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
+</body>
+</html>
